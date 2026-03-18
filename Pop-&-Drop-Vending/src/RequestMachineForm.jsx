@@ -88,7 +88,7 @@ function RequestMachineForm() {
               className={inputClass}
               type="text"
               value={companyName}
-              placeholder="Acme Corp"
+              placeholder="Your Company Name"
               required
               onChange={(e) => setCompanyName(e.target.value)}
             />
@@ -103,7 +103,7 @@ function RequestMachineForm() {
               className={inputClass}
               type="text"
               value={name}
-              placeholder="Jane Smith"
+              placeholder="Your Name"
               required
               onChange={(e) => setName(e.target.value)}
             />
@@ -119,7 +119,7 @@ function RequestMachineForm() {
                 className={inputClass}
                 type="email"
                 value={email}
-                placeholder="jane@acme.com"
+                placeholder="Your Email Address"
                 required
                 onChange={(e) => setEmail(e.target.value)}
               />

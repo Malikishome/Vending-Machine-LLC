@@ -34,7 +34,6 @@ const spots = [ // Add the pics for each of the locations
     }
 ]
 function Locations() {
-
     const [ref, visible] = useScrollEffect();
 
     return (
