@@ -9,8 +9,8 @@ function Footer() {
         <div className='max-w-6xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-8'>
           
           <div>
-            <h2 className='font-bold text-2xl mb-2'>Pop & Drop Vending</h2>
-            <p className='mb-2'>Serving Orlando and Surrounding Areas Since 2023</p>
+            <h2 className='font-bold text-2xl mb-2 text-white'>Pop & Drop Vending</h2>
+            <p className='mb-2 text-white'>Serving Orlando and Surrounding Areas Since 2023</p>
           </div>
 
           <div className='md:text-right'>
@@ -27,12 +27,12 @@ function Footer() {
         </div>
 
         {/* Payment Icons */}
-        <div className="flex justify-center md:justify-start gap-6 text-3xl text-white pb-4">
-          <FaApplePay className="hover:scale-110 transition" />
-          <FaGooglePay className="hover:scale-110 transition" />
-          <FaCcVisa className="hover:scale-110 transition" />
-          <FaCcMastercard className="hover:scale-110 transition" />
-          <FaCcAmex className="hover:scale-110 transition" />
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-8 text-3xl max-w-6xl mx-auto px-6 text-white pb-4">
+          <FaApplePay className="h-8 hover:scale-110 transition" />
+          <FaGooglePay className="h-8 hover:scale-110 transition" />
+          <FaCcVisa className="h-8 hover:scale-110 transition" />
+          <FaCcMastercard className="h-8 hover:scale-110 transition" />
+          <FaCcAmex className="h-8 hover:scale-110 transition" />
         </div>
 
         <div className='text-center text-gray-400 text-sm border-t border-gray-700 py-4'>
