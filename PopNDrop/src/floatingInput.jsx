@@ -1,15 +1,22 @@
 import React from "react";
 
-export default function FloatingInput({ label, type = "text", name }) {
+function FloatingInput({ label, type = "text", name, value, onChange }) {
     return (
-        <div className="relative z-0 w-72">
+        <div className="relative z-0 w-full">
             <input type={type}
-                name={name}
+                id={name}
                 placeholder=" "
-                className="peer w-full border border-gray-400 px-3 pt-6 pb-2 rounded-md outline-none focus:border-blue-500" />
+                value={value}
+                onChange={onChange}
+                className="peer w-full border border-gray-400 px-3 pt-6 pb-2 rounded-md outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 transition-colors duration-200" />
 
-                <label className="absolute left-3 top-4 text-gray-500 transition-all duration-200 pointer-events-none peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-sm">
-                    {label}</label>
+                <label 
+                htmlFor={name}
+                className="absolute left-3 top-4 text-gray-500 transition-all duration-200 ease-in-out
+                peer-focus:top-[7px] peer-focus:text-[11px] peer-focus:text-blue-500 peer-focus:font-medium
+                peer-[:not(:placeholder-shown)]:top-[7px] peer-[not(:placeholder-shown)]:text-[11px] peer-[not(:placeholder-shown)]:text-gray-500 peer-[not(:placeholder-shown)]:font-medium">
+                    {label}
+                    </label>
         </div>
 
     );

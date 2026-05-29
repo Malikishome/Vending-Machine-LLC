@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useScrollEffect from "./useScrollEffect";
+import FloatingInput from './floatingInput';
 
 function RequestMachineForm() {
   const [companyName, setCompanyName] = useState('');
@@ -74,7 +75,7 @@ function RequestMachineForm() {
 
         {/* Header */}
         <h2 className="text-3xl font-bold text-gray-800 mb-1 text-center">
-          Request a Machine
+          Shoot Us a Message
         </h2>
         <p className="text-gray-500 text-sm text-center mb-8">
           Fill out the form below and we'll get back to you within 1–2 business days.
@@ -86,11 +87,9 @@ function RequestMachineForm() {
           className="bg-white rounded-2xl shadow-md p-8 flex flex-col gap-4"
         >
           {/* Company Name */}
-          <div className="flex flex-col gap-1">
-            <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-              Company Name
-            </label>
-            <input
+            <FloatingInput
+              label="Company Name"
+              name="companyName"
               className={inputClass}
               type="text"
               value={companyName}
@@ -98,14 +97,11 @@ function RequestMachineForm() {
               required
               onChange={(e) => setCompanyName(e.target.value)}
             />
-          </div>
 
           {/* Your Name */}
-          <div className="flex flex-col gap-1">
-            <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-              Your Name
-            </label>
-            <input
+            <FloatingInput
+              label="Your Name"
+              name="name"
               className={inputClass}
               type="text"
               value={name}
@@ -113,15 +109,13 @@ function RequestMachineForm() {
               required
               onChange={(e) => setName(e.target.value)}
             />
-          </div>
 
           {/* Email + Phone side by side on larger screens */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <div className="flex flex-col gap-1 flex-1">
-              <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-                Email
-              </label>
-              <input
+            <div className="flex-1">
+              <FloatingInput
+                label="Email"
+                name="email"
                 className={inputClass}
                 type="email"
                 value={email}
@@ -130,15 +124,14 @@ function RequestMachineForm() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="flex flex-col gap-1 flex-1">
-              <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
-                Phone
-              </label>
-              <input
+            <div className="flex gap-1 flex-1">
+              <FloatingInput
+                label="Phone"
+                name="phone"
                 className={inputClass}
                 type="tel"
                 value={phone}
-                placeholder="(407) 555-0123"
+                placeholder="Your Phone Number"
                 onChange={(e) => setPhone(e.target.value)}
               />
             </div>
