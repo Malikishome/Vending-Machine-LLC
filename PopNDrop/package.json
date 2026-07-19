@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@supabase/supabase-js": "^2.108.1",
     "@tailwindcss/vite": "^4.1.18",
+    "motion": "^12.42.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icon": "^1.0.0",

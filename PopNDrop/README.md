@@ -1,16 +1,33 @@
-# React + Vite
+# PopNDrop
+Pop & Drop Vending 🥤
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack business landing page for a real vending machine company serving Orlando, FL and surrounding areas.
 
-Currently, two official plugins are available:
+<!-- Once deployed, replace the line below with your live URL -->
+<!-- 🔗 [Live Demo](https://your-site-url.com) -->
+<!-- Once you have a screenshot, uncomment and update this line -->
+<!-- ![Pop & Drop Vending Screenshot](./public/screenshot.png) -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+About
+Pop & Drop Vending is a modern vending machine business based in Orlando, FL. This site serves as the company's primary web presence — allowing potential clients to learn about the service and submit machine requests directly through the site.
+Built and owned by the business founder, this is a real production application, not a demo project.
 
-## React Compiler
+Tech Stack
+TechnologyPurposeReactFrontend UITailwind CSSStylingViteBuild toolSupabasePostgreSQL database for lead storageEmailJSEmail notifications on form submissionJavaScript (ES6+)Core language
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Features
 
-## Expanding the ESLint configuration
+⚡ Responsive design — mobile-first layout with hamburger nav
+🎞 Scroll-based animations on every section
+🗂 Animated accordion for About/FAQ content
+📍 Location cards showing service area types
+📬 Multi-field contact form with:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Input validation
+Loading state on submit
+Success confirmation message
+Lead saved to Supabase database
+Instant email notification via EmailJS
+
+
+💳 Footer with payment method badges (Visa, Mastercard, Amex, Apple Pay, Google Pay)
