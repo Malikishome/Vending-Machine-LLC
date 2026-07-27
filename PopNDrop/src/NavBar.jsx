@@ -18,12 +18,12 @@ function NavBar() {
                         color="#ffb900"
                          disabled={false} />
                     </li>
-                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded"><a href="#about">ABOUT</a></li>
-                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded"><a href="#offer">SERVICES
+                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded cursor-pointer"><a href="#about">ABOUT</a></li>
+                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded cursor-pointer"><a href="#offer">SERVICES
                     </a></li>
-                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded"><a href="#locations">LOCATIONS</a></li>
+                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded cursor-pointer"><a href="#locations">LOCATIONS</a></li>
                     
-                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded border-2 border-white"> <a href="#form">CONTACT US</a></li>
+                    <li className="flex p-4 items-center text-amber-400 font-bold transition hover:bg-white hover:scale-105 rounded border-2 border-white cursor-pointer"> <a href="#form">CONTACT US</a></li>
                 </ul>
             </div>    
         </nav>

@@ -120,10 +120,10 @@ function RequestMachineForm() {
 
         {/* Header */}
         <h2 className="text-3xl font-bold text-gray-800 mb-1 text-center">
-          Shoot Us a Message
+          Shoot Us a Message 
         </h2>
         <p className="text-gray-500 text-sm text-center mb-8">
-          Fill out the form below and we'll get back to you within 1–2 business days.
+          Fill out the form below and we'll get back to you within <span className="font-bold text-amber-400">1–2</span> business days.
         </p>
 
         {/* Form */}
