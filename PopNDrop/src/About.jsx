@@ -34,7 +34,7 @@ function About() {
                     Our team regularly restocks and maintains every machine. If something breaks,
                     we fix it — fast. You'll never deal with an empty or broken machine.
                 </ExpandAbout>
-                <ExpandAbout title="What products do you carry?">
+                <ExpandAbout title="What products do we carry?">
                     We stock a curated mix of snacks, beverages, and healthy options. We can also
                     customize the product selection based on your location's preferences.
                 </ExpandAbout>

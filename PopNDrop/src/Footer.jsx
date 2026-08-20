@@ -39,7 +39,6 @@ function Footer() {
           <img src={ApplePayIcon} alt="Apple Pay" className="h-6  hover:scale-110 transition rounded-sm" />
           <img src={GooglePayIcon} alt="Google Pay" className="h-6  hover:scale-110 transition rounded-sm" />
         </div>
- rounded-sm
         <div className='text-center text-gray-400 text-sm border-t border-gray-700 py-4'>
           © {new Date().getFullYear()} Pop & Drop Vending. All rights reserved
         </div>
